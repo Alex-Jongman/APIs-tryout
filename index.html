@@ -6,11 +6,19 @@
     <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>API's Tryout</title>
-    <script type="module" src="src/index.js"></script>
+    <script type="module" src="/src/index.js"></script>
   </head>
   <body>
     <main>
       <h1>API's Tryout</h1>
+      <p class="sunrise"></p>
     </main>
+
+    <template id="sunrise-sunset-template">
+      <link rel="stylesheet" href="./styles/sunrise-sunset.css" />
+      <h2>Sunrise / Sunset</h2>
+      <p>Sunrise = <span class="sunrise"></span></p>
+      <p>Sunset = <span class="sunset"></span></p>
+    </template>
   </body>
 </html>
