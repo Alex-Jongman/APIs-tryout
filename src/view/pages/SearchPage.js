@@ -10,6 +10,12 @@ function submitHandler(event) {
 
   osmService.search(data).then((result) => {
     console.log(result);
+    osmService.details(result[0].osm_id, result[0].osm_type).then((details) => {
+      console.log(details);
+    });
+    osmService.addressLockup(result[0].osm_id, result[0].osm_type).then((address) => {
+      console.log(address);
+    });
   });
 }
 
