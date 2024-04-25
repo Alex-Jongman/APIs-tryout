@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="%BASE_URL%" />
+    <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
+    <title>OSM Search</title>
+    <script type="module" src="/src/view/pages/SearchPage.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="./">Home</a>
+      <a href="./pages/search.html">search</a>
+    </nav>
+
+    <main>
+      <h1>OSM Search</h1>
+      <form id="osm_search_form">
+        <label for="query">Query</label>
+        <input id="query" name="query" type="text">
+
+        <button type="submit">Submit</button>
+      </form>  
+    </main>
+  </body>
+</html>
